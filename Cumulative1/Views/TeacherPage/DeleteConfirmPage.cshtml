@@ -1,0 +1,11 @@
+﻿@model Cumulative1.Models.Teacher;
+
+<p> @Model.TeacherFName</p>
+
+<a href="/TeacherPage/Show/@Model.TeacherId">No, Go Back</a>
+
+<form action="/TeacherPage/DeleteConfirmed/@Model.TeacherId" method="get">
+	
+	<input type="submit" value="Delete This Teacher" />
+
+</form>
